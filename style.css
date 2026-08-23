@@ -59,7 +59,7 @@ main {
   width: 100%;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-  padding: var(--paddinf-2xl);
+  padding: var(--padding-2xl);
   display: flex;
   flex-direction: column;
   gap: var(--space-2xl);
@@ -86,6 +86,7 @@ section {
     justify-content: center;
     gap: var(--space-xl);
     padding: var(--padding-xl);
+
 }
 
 .board {
@@ -94,6 +95,7 @@ section {
     background-color: var(--primary-bg-color);
     border-radius: var(--border-radius-xl);
     padding: var(--padding-lg) var(--padding-2xl);
+    transition: all .3s ease;
 }
 
 .board-header {
@@ -130,4 +132,12 @@ section {
     background-color: var(--secondary-text-color);
     color: var(--primary-text-color);
     font-weight: 700;
+
+}
+
+
+.drag-animation {
+  border: var(--space-sm) dashed var(--primary-text-color);
+  scale: 1.05;
+  transition: all .3s ease;
 }

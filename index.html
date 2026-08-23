@@ -14,7 +14,7 @@
       </nav>
       <section>
         <!-- Todo board div -->
-        <div class="board todo">
+        <div id="todo" class="board todo">
           <div class="board-header">
             <h4>TO DO</h4>
             <h4>0</h4>
@@ -22,15 +22,15 @@
 
           <div draggable="true" class="task">
             <div class="task-dets">
-                <h2>Task 1</h2>
-                <p>Description task 1</p>
+              <h2>Task 1</h2>
+              <p>Description task 1</p>
             </div>
             <button class="delete-btn">Delete</button>
           </div>
         </div>
 
         <!-- Progress board div -->
-        <div class="board progress">
+        <div id="progress" class="board progress">
           <div class="board-header">
             <h4>In Progress</h4>
             <h4>0</h4>
@@ -38,7 +38,7 @@
         </div>
 
         <!-- complete board div -->
-        <div class="board complete">
+        <div id="complete" class="board complete">
           <div class="board-header">
             <h4>Completed</h4>
             <h4>0</h4>
@@ -46,5 +46,7 @@
         </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
