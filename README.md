@@ -119,7 +119,7 @@ Some things I would like to add:
 
 ---
 
-Live Link :- 
+Live Link :- https://sanjaydotenv.github.io/Kanban-board/
 
 Made with ❤️ and JavaScript.
 
