@@ -3,49 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="kanban.png" />
+    <title>Kanban Board</title>
   </head>
+
   <body>
     <main>
+      <!-- Navbar -->
       <nav>
-        <div class="left">KANBAN BOARD</div>
-        <div class="right"><button>Add New Task</button></div>
+        <div class="left">
+          <h2>KANBAN BOARD</h2>
+        </div>
+
+        <div class="right addNewTask">
+          <button>Add New Task</button>
+          <div class="icon"></div>
+        </div>
       </nav>
+
+      <!-- Boards -->
       <section>
-        <!-- Todo board div -->
+        <!-- Todo -->
         <div id="todo" class="board todo">
           <div class="board-header">
             <h4>TO DO</h4>
-            <h4>0</h4>
+            <h4 class="count">0</h4>
           </div>
 
-          <div draggable="true" class="task">
-            <div class="task-dets">
-              <h2>Task 1</h2>
-              <p>Description task 1</p>
-            </div>
-            <button class="delete-btn">Delete</button>
-          </div>
+          <!-- Tasks will come here -->
         </div>
 
-        <!-- Progress board div -->
+        <!-- Progress -->
         <div id="progress" class="board progress">
           <div class="board-header">
-            <h4>In Progress</h4>
-            <h4>0</h4>
+            <h4>IN PROGRESS</h4>
+            <h4 class="count">0</h4>
           </div>
+
+          <!-- Tasks will come here -->
         </div>
 
-        <!-- complete board div -->
+        <!-- Complete -->
         <div id="complete" class="board complete">
           <div class="board-header">
-            <h4>Completed</h4>
-            <h4>0</h4>
+            <h4>COMPLETED</h4>
+            <h4 class="count">0</h4>
           </div>
         </div>
       </section>
     </main>
+
+    <div class="overlay">
+      <div class="bg"></div>
+
+      <div class="addtask">
+        <input type="text" placeholder="Title..." />
+
+        <textarea placeholder="Description..."></textarea>
+
+        <button class="createBtn">Add Task</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
